@@ -26,7 +26,7 @@ export const MovieAdd = () => {
       imageURL: formData.get("imageURL"),
     };
     dispatch(addMovieAction(movieData))
-    navigate("/")
+    navigate("/", {replace: true})
   }
 
   return (
